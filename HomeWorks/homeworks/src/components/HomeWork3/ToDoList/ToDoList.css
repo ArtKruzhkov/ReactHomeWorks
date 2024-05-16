@@ -1,0 +1,22 @@
+.ToDoList-wrap {
+    padding-bottom: 20px;
+}
+
+.card {
+    margin: 12px auto;
+    width: 50%;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
