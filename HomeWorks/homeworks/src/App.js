@@ -3,8 +3,20 @@ import Message from './components/Message/Message'
 import CommentsList from './components/HomeWork2/CommentsList';
 import TempConverter from './components/HomeWork3/TempConverter/TempConverter';
 import ToDoList from './components/HomeWork3/ToDoList/ToDoList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/Homework4/HomePage/HomePage';
+import AboutPage from './components/Homework4/AboutPage/AboutPage';
+import ArticlesList from './components/Homework4/ArticlesList/ArticlesList';
+import ArticleDetails from './components/Homework4/ArticleDetails/ArticleDetails';
 
 function App() {
+  const articlesHW4 = [
+    { id: 1, title: 'Article 1', content: 'This is a text for the article 1' },
+    { id: 2, title: 'Article 2', content: 'This is a text for the article 2' },
+    { id: 3, title: 'Article 3', content: 'This is a text for the article 3' },
+    { id: 4, title: 'Article 4', content: 'This is a text for the article 4' },
+    { id: 5, title: 'Article 5', content: 'This is a text for the article 5' },
+  ];
   return (
     <div className="App">
       <header className="App-header">
@@ -27,6 +39,19 @@ function App() {
           <h4>To Do List</h4>
           <ToDoList />
         </div>
+      </div>
+      <div className='HomeWork-4'>
+        <h2>HomeWork-4</h2>
+        <Router>
+          <div className='router-wrap'>
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/about' element={<AboutPage />} />
+              <Route path='/articles' element={<ArticlesList articles={articlesHW4} />} />
+              <Route path='/articles/:id' element={<ArticleDetails articles={articlesHW4} />} />
+            </Routes>
+          </div>
+        </Router>
       </div>
     </div>
   );
