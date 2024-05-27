@@ -33,7 +33,7 @@
 }
 
 .HomeWork-4 {
-  height: 50vh;
+  height: fit-content;
 }
 
 @keyframes App-logo-spin {

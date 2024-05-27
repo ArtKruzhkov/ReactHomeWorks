@@ -8,6 +8,9 @@ import HomePage from './components/Homework4/HomePage/HomePage';
 import AboutPage from './components/Homework4/AboutPage/AboutPage';
 import ArticlesList from './components/Homework4/ArticlesList/ArticlesList';
 import ArticleDetails from './components/Homework4/ArticleDetails/ArticleDetails';
+import { Provider } from 'react-redux';
+import store from './components/HomeWork5/Redux/store';
+import ThemeSwitch from './components/HomeWork5/Redux/ThemeSwitch';
 
 function App() {
   const articlesHW4 = [
@@ -52,6 +55,12 @@ function App() {
             </Routes>
           </div>
         </Router>
+      </div>
+      <div className='HomeWork-5'>
+        <h2>HomeWork-5</h2>
+        <Provider store={store}>
+          <ThemeSwitch />
+        </Provider>
       </div>
     </div>
   );
