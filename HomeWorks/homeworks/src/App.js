@@ -11,6 +11,9 @@ import ArticleDetails from './components/HomeWork4/ArticleDetails/ArticleDetails
 import { Provider } from 'react-redux';
 import store from './components/HomeWork5/Redux/store';
 import ThemeSwitch from './components/HomeWork5/Redux/ThemeSwitch';
+import productsStore from './components/HomeWork6/store/productsStore';
+import AddProduct from './components/HomeWork6/components/AddProduct/AddProduct';
+import ProductsList from './components/HomeWork6/components/ProductsList/ProductsList';
 
 function App() {
   const articlesHW4 = [
@@ -60,6 +63,13 @@ function App() {
         <h2>HomeWork-5</h2>
         <Provider store={store}>
           <ThemeSwitch />
+        </Provider>
+      </div>
+      <div className='HomeWork-6'>
+        <h2>HomeWork-6</h2>
+        <Provider store={productsStore}>
+          <AddProduct />
+          <ProductsList />
         </Provider>
       </div>
     </div>
