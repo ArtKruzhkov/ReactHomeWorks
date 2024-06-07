@@ -14,6 +14,7 @@ import ThemeSwitch from './components/HomeWork5/Redux/ThemeSwitch';
 import productsStore from './components/HomeWork6/store/productsStore';
 import AddProduct from './components/HomeWork6/components/AddProduct/AddProduct';
 import ProductsList from './components/HomeWork6/components/ProductsList/ProductsList';
+import TasksList from './components/HomeWork7/components/TasksList';
 
 function App() {
   const articlesHW4 = [
@@ -71,6 +72,10 @@ function App() {
           <AddProduct />
           <ProductsList />
         </Provider>
+      </div>
+      <div className='HomeWork-7'>
+        <h2>HomeWork-7</h2>
+        <TasksList />
       </div>
     </div>
   );

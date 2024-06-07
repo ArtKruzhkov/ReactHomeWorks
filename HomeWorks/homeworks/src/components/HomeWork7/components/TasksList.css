@@ -1,0 +1,74 @@
+.tasks-list-hw7 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tasks-list-hw7 h4 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.tasks-list-hw7 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks-list-hw7 li {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.tasks-list-hw7 li:hover {
+    background-color: #f1f1f1;
+}
+
+.tasks-list-hw7 li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.tasks-list-hw7 .loading,
+.tasks-list-hw7 .error {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 18px;
+    color: #666;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 18px;
+    color: #ff0000;
+    /* Красный цвет для сообщения об ошибке */
+    background-color: #ffe5e5;
+    /* Цвет фона для сообщения об ошибке */
+    border: 1px solid #ff0000;
+    /* Красная рамка для сообщения об ошибке */
+    border-radius: 5px;
+    /* Закругленные углы для сообщения об ошибке */
+    padding: 10px;
+    /* Поля внутри сообщения об ошибке */
+}
